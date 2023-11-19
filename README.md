@@ -9,4 +9,4 @@ This repository contains serial command codes captured from the official UBlox c
 
 ## What about the GPS poll codes?
 
-The UBX protocol provides a way to poll the current status of the GPS to check that the GPS was configured correctly. Since this is a two-way communication, it will require much more extensive reverse-engineering. However, I am planning to do it eventually. 
+The UBX protocol provides a way to poll the current status of the GPS to check that the GPS was configured correctly. This is a bit tricky, since according to the datasheet, the communication is mixed between string (ASCII) and hexadecimal binary formats. Since this is a two-way communication, it will require much more extensive reverse-engineering. However, I am planning to do it eventually. 
