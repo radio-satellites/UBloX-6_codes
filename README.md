@@ -7,6 +7,11 @@ UBlox provides the spec for these codes (https://content.u-blox.com/sites/defaul
 
 This repository contains serial command codes captured from the official UBlox configuration software communicating with the GPS. Each text file has the command in the hexadecimal format. To send the command, simply send the hexadecimal bytes via serial to the GPS module. 
 
+This repository also includes a file (called generate_C.py), which is a python file to generate Arduino-compatible arrays. 
+
+![image](https://github.com/radio-satellites/UBloX-6_codes/assets/114111180/9133b97c-1cf0-4f90-8c7d-994baa60faaf)
+
+
 ## What about the GPS poll codes?
 
 The UBX protocol provides a way to poll the current status of the GPS to check that the GPS was configured correctly. This is a bit tricky, since according to the datasheet, the communication is mixed between string (ASCII) and hexadecimal binary formats. Since this is a two-way communication, it will require much more extensive reverse-engineering. However, I am planning to do it eventually. 
