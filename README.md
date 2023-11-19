@@ -1,2 +1,8 @@
 # UBloX-6_codes
-Reverse-engineered serial command codes for the UBlox-6 GPS modules (e.g NEO-6M)
+These are some of the reverse-engineered serial command codes for the UBlox-6 GPS modules (e.g NEO-6M). 
+
+## Background
+
+UBlox provides the spec for these codes (https://content.u-blox.com/sites/default/files/products/documents/u-blox6_ReceiverDescrProtSpec_%28GPS.G6-SW-10018%29_Public.pdf), however, the CRC is difficult to generate, and most of the fields are unclear. 
+
+This repository contains serial command codes captured from the official UBlox configuration software communicating with the GPS. Each text file has the command in the hexadecimal format. To send the command, simply send the hexadecimal bytes via serial to the GPS module. 
