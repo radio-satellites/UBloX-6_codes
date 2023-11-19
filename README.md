@@ -15,3 +15,5 @@ This repository also includes a file (called generate_C.py), which is a python f
 ## What about the GPS poll codes?
 
 The UBX protocol provides a way to poll the current status of the GPS to check that the GPS was configured correctly. This is a bit tricky, since according to the datasheet, the communication is mixed between string (ASCII) and hexadecimal binary formats. Since this is a two-way communication, it will require much more extensive reverse-engineering. However, I am planning to do it eventually. 
+
+EDIT: After furthur research, the codes included in the package have two parts: the actual command message, and the poll code. These are (most times) easy enough to seperate. If memory is tight, it is a good idea, as they all start with the same header as the other packets. However, if space is not a large issue, it is recommended to keep them, as they may be required (not tested yet). 
